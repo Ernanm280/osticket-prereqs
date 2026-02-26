@@ -34,40 +34,43 @@ You can find all the necessary installation files for this project below:
   - Log in to the Azure portal and create a Virtual Machine with the specified configuration.
   - Connect to the VM using Remote Desktop with the provided credentials. 
 <p>
-<img width="1100" alt="Screenshot 2025-01-22 at 6 09 14 PM" src="https://github.com/user-attachments/assets/97604944-1227-4896-b062-002080c397f2" />
-<img width="455" alt="Screenshot 2025-01-22 at 7 22 15 PM" src="https://github.com/user-attachments/assets/d72ce60a-c8dc-43c8-8271-e87a70c26452" />
+<img width="1725" height="383" alt="Screenshot 2026-02-25 201353" src="https://github.com/user-attachments/assets/feca116a-b432-4ebc-a037-d7fa142c5b4d" />
+<img width="1777" height="972" alt="Screenshot 2026-02-25 201828" src="https://github.com/user-attachments/assets/34e023d4-ec87-4009-ac6c-4e9366a21136" />
 
 ### Step 2: Prepare the Virtual Machine
   - Inside the VM, download [osTicket-Installation-Files.zip](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) to the desktop.
   - Extract the files into a folder named `osTicket-Installation-Files` on the desktop.
-<img width="426" alt="Screenshot 2025-01-22 at 7 38 43 PM" src="https://github.com/user-attachments/assets/ac871ef0-3fe0-41e2-a2e8-90721517b404" />
-<img width="439" alt="Screenshot 2025-01-22 at 7 39 23 PM" src="https://github.com/user-attachments/assets/c98e2504-11ed-448e-ab18-270397d5ecff" />
+<img width="443" height="233" alt="Screenshot 2026-02-25 203600" src="https://github.com/user-attachments/assets/5a450298-7939-4f46-bc5d-d4797d16fcbe" />
+<img width="630" height="455" alt="Screenshot 2026-02-25 203933" src="https://github.com/user-attachments/assets/833aabcc-ccbf-4c72-abfd-bab234ad416c" />
+
 
 ### 3. Install and Enable IIS with CGI
 1. Open **Control Panel** -> **Programs** -> **Turn Windows features on or off**.
 2. Enable the following:
    - **Internet Information Services (IIS)**
    - **World Wide Web Services** -> **Application Development Features** -> **[X] CGI**
-<img width="294" alt="Screenshot 2025-01-22 at 7 41 22 PM" src="https://github.com/user-attachments/assets/ef80b743-f12e-4036-9c61-144694f3d1cd" />
-<img width="296" alt="Screenshot 2025-01-22 at 7 41 40 PM" src="https://github.com/user-attachments/assets/1c3ca1e3-deb3-4c00-851b-e026576a516d" />
+<img width="700" height="458" alt="Screenshot 2026-02-25 204931" src="https://github.com/user-attachments/assets/147313fd-1da4-4a6f-b4da-fd54f3a90583" />
+
 
 ### 4. Install Required Components
 From the `osTicket-Installation-Files` folder, perform the following installations:
 1. Install **PHP Manager for IIS** (`PHPManagerForIIS_V1.5.0.msi`).
 2. Install **Rewrite Module** (`rewrite_amd64_en-US.msi`).
+<img width="514" height="309" alt="Screenshot 2026-02-25 205346" src="https://github.com/user-attachments/assets/5e9dfe40-aa10-4ef5-921f-ab2851c63777" />
+<img width="347" height="280" alt="Screenshot 2026-02-25 205418" src="https://github.com/user-attachments/assets/b4e8c211-76a6-487d-a38b-2804ca27cbcd" />
+<img width="510" height="414" alt="Screenshot 2026-02-25 205529" src="https://github.com/user-attachments/assets/ef66d70a-dd3c-4d1c-b266-bc0aebd490cc" />
 
-<img width="380" alt="Screenshot 2025-01-22 at 7 42 50 PM" src="https://github.com/user-attachments/assets/50bd067d-1759-4d5c-b181-9ec0e61b0707" />
-<img width="347" alt="Screenshot 2025-01-22 at 7 44 02 PM" src="https://github.com/user-attachments/assets/787882bb-ce07-406e-b96b-fc0e120cbb54" />
-<img width="349" alt="Screenshot 2025-01-22 at 7 44 35 PM" src="https://github.com/user-attachments/assets/9416dd52-867f-4f50-9b1b-cf0cfb7a5561" />
+
 
 ### 5. Set Up PHP
 1. Create the directory `C:\PHP`.
 2. Extract `PHP 7.3.8` (`php-7.3.8-nts-Win32-VC15-x86.zip`) into the `C:\PHP` folder.
 3. Install **VC_redist.x86.exe**.
+<img width="367" height="377" alt="Screenshot 2026-02-25 210448" src="https://github.com/user-attachments/assets/3c52d019-3e7e-4248-b957-fd2cc3762174" />
+<img width="716" height="609" alt="Screenshot 2026-02-25 211127" src="https://github.com/user-attachments/assets/ca009ad4-d59f-4d3e-9b5b-dd332173a13f" />
+<img width="506" height="369" alt="Screenshot 2026-02-25 211330" src="https://github.com/user-attachments/assets/9f7f258a-abb9-4589-b32b-95f12594803a" />
 
-<img width="467" alt="Screenshot 2025-01-22 at 7 58 00 PM" src="https://github.com/user-attachments/assets/ee996992-16f9-4918-bd4e-37cd4ebd32a3" />
-<img width="437" alt="Screenshot 2025-01-22 at 7 59 01 PM" src="https://github.com/user-attachments/assets/9d4bd23c-2136-4492-a91a-2546ea40a2c3" />
-<img width="332" alt="Screenshot 2025-01-22 at 8 00 16 PM" src="https://github.com/user-attachments/assets/18b0c4ea-ae28-4718-88e7-7223a6c5ca2b" />
+
 
 ### 6. Install MySQL
 1. Install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) with the following configuration:
@@ -77,11 +80,11 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
    - Set MySQL credentials:
      - Username: `root`
      - Password: `root`
+<img width="671" height="422" alt="Screenshot 2026-02-25 212430" src="https://github.com/user-attachments/assets/fab912d1-009f-4d62-b3c6-45734bce41df" />
+<img width="492" height="380" alt="Screenshot 2026-02-25 212511" src="https://github.com/user-attachments/assets/30de4881-da78-4a92-88d2-6afe07c74631" />
+<img width="492" height="374" alt="Screenshot 2026-02-25 212654" src="https://github.com/user-attachments/assets/a2e884e1-6ad1-43be-bf1d-31b469cfabb3" />
+<img width="491" height="377" alt="Screenshot 2026-02-25 212834" src="https://github.com/user-attachments/assets/b7c99ea2-c805-4057-a270-6b2eeeac4024" />
 
-<img width="344" alt="Screenshot 2025-01-22 at 8 01 27 PM" src="https://github.com/user-attachments/assets/8a1173f9-c0d3-4f02-80c6-9491937ac9ba" />
-<img width="350" alt="Screenshot 2025-01-22 at 8 01 49 PM" src="https://github.com/user-attachments/assets/6d87cbe5-a84f-4bdb-af66-39aa97df30ba" />
-<img width="346" alt="Screenshot 2025-01-22 at 8 02 18 PM" src="https://github.com/user-attachments/assets/3fcb3ea5-598d-4d2c-86b8-6e6441e35e53" />
-<img width="345" alt="Screenshot 2025-01-22 at 8 31 39 PM" src="https://github.com/user-attachments/assets/4897dc06-4ddb-4ed9-a6bb-fa52c0476753" />
 
 ### 7. Configure IIS
 1. Open IIS as an Administrator.
@@ -91,9 +94,9 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
 3. Reload IIS:
    - Open IIS.
    - Stop and Start the server.
+<img width="437" height="284" alt="Screenshot 2026-02-25 213155" src="https://github.com/user-attachments/assets/b6cdab43-b90b-4db1-a4fe-0a35169571dc" />
+<img width="664" height="446" alt="Screenshot 2026-02-25 213519" src="https://github.com/user-attachments/assets/58ef2f59-43b6-4d57-b0c6-60b5b7a5f820" />
 
-<img width="361" alt="Screenshot 2025-01-22 at 8 32 16 PM" src="https://github.com/user-attachments/assets/3ccc1788-ef42-4eb4-8a75-4862708ad59a" />
-<img width="597" alt="Screenshot 2025-01-22 at 8 35 06 PM" src="https://github.com/user-attachments/assets/066e5a27-205e-4c05-90d7-632eb086f4ef" />
 
 ### 8. Install osTicket
 1. Extract `osTicket v1.15.8` (`osTicket-v1.15.8.zip`) from the `osTicket-Installation-Files` folder.
@@ -110,15 +113,12 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
      - `php_intl.dll`
      - `php_opcache.dll`
 7. Refresh the osTicket site in your browser.
-
-<img width="402" alt="Screenshot 2025-01-22 at 8 38 43 PM" src="https://github.com/user-attachments/assets/157b498a-7103-41c2-a11b-19fb3c5dee69" />
-<img width="662" alt="Screenshot 2025-01-22 at 8 40 09 PM" src="https://github.com/user-attachments/assets/10d91596-f9c1-4f7b-a150-65ddce4b2dea" />
-<img width="419" alt="Screenshot 2025-01-22 at 8 40 38 PM" src="https://github.com/user-attachments/assets/5d02eda5-8cc0-4ba0-9e31-c8ea6082ce4d" /> 
-<img width="414" alt="Screenshot 2025-01-22 at 8 40 57 PM" src="https://github.com/user-attachments/assets/a6fcb525-6ba8-4420-bd06-c2375d9b24dc" />
-<img width="631" alt="Screenshot 2025-01-22 at 8 43 19 PM" src="https://github.com/user-attachments/assets/5bcb8bde-955b-44ba-8361-947dfa4d94d8" />
-<img width="596" alt="Screenshot 2025-01-22 at 8 43 30 PM" src="https://github.com/user-attachments/assets/80441b7a-70b7-46da-ba2c-cf194f176e34" />
-<img width="557" alt="Screenshot 2025-01-22 at 8 54 35 PM" src="https://github.com/user-attachments/assets/8aa5a966-b5cf-4285-be21-480fec91f593" />
-<img width="606" alt="Screenshot 2025-01-22 at 8 54 48 PM" src="https://github.com/user-attachments/assets/360e1162-bcfd-4843-8783-1ab8f67fbafb" />
+<img width="738" height="595" alt="Screenshot 2026-02-25 215053" src="https://github.com/user-attachments/assets/9d7ce37c-d5bd-4a34-803f-e633e9e531b0" />
+<img width="399" height="380" alt="Screenshot 2026-02-25 215219" src="https://github.com/user-attachments/assets/a07e1d6d-20f0-4a38-923e-fe02fa305e63" />
+<img width="185" height="140" alt="Screenshot 2026-02-25 215236" src="https://github.com/user-attachments/assets/f744abc2-5f24-4786-81ea-bcb563802a36" />
+<img width="1340" height="401" alt="Screenshot 2026-02-25 215727" src="https://github.com/user-attachments/assets/30602cc8-c66f-4a29-bdfb-1ab5aebbde26" />
+<img width="658" height="769" alt="Screenshot 2026-02-25 220244" src="https://github.com/user-attachments/assets/85ec4e84-b045-43cb-9a4a-325e4b82b7d0" />
+<img width="601" height="722" alt="Screenshot 2026-02-25 220348" src="https://github.com/user-attachments/assets/a687e7c8-1a14-4ad5-9565-f472205e851b" />
 
 ### 9. Configure osTicket
 1. Rename `ost-config.php`:
