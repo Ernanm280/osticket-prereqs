@@ -31,31 +31,29 @@ You can find all the necessary installation files for this project below:
 <h2>Installation Steps</h2>
 
 ### Step 1: Create and Configure the Azure Virtual Machine
-  - Log in to the Azure portal and create a Virtual Machine with the specified configuration.
-  - Connect to the VM using Remote Desktop with the provided credentials. 
+I logged into the Microsoft Azure portal and deployed a Virtual Machine using the specified configuration. After the deployment was completed, I securely connected to the VM using Remote Desktop Protocol (RDP) with the assigned credentials to begin system configuration.
 <p>
 <img width="1725" height="383" alt="Screenshot 2026-02-25 201353" src="https://github.com/user-attachments/assets/feca116a-b432-4ebc-a037-d7fa142c5b4d" />
 <img width="1777" height="972" alt="Screenshot 2026-02-25 201828" src="https://github.com/user-attachments/assets/34e023d4-ec87-4009-ac6c-4e9366a21136" />
 
 ### Step 2: Prepare the Virtual Machine
-  - Inside the VM, download [osTicket-Installation-Files.zip](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) to the desktop.
-  - Extract the files into a folder named `osTicket-Installation-Files` on the desktop.
+Within the virtual machine, I downloaded the required osTicket Installation Files
+and saved them locally to the desktop. I then extracted the contents into a structured directory named `osTicket-Installation-Files`, ensuring all required installation dependencies and components were properly organized before application deployment.
+
 <img width="443" height="233" alt="Screenshot 2026-02-25 203600" src="https://github.com/user-attachments/assets/5a450298-7939-4f46-bc5d-d4797d16fcbe" />
 <img width="630" height="455" alt="Screenshot 2026-02-25 203933" src="https://github.com/user-attachments/assets/833aabcc-ccbf-4c72-abfd-bab234ad416c" />
 
 
 ### 3. Install and Enable IIS with CGI
-1. Open **Control Panel** -> **Programs** -> **Turn Windows features on or off**.
-2. Enable the following:
-   - **Internet Information Services (IIS)**
-   - **World Wide Web Services** -> **Application Development Features** -> **[X] CGI**
+I accessed the Windows Control Panel and navigated to Programs → Turn Windows features on or off to enable the required web server components. I activated Internet Information Services (IIS) and enabled CGI under World Wide Web Services → Application Development Features to support PHP processing and prepare the server environment for osTicket deployment.
+
 <img width="700" height="458" alt="Screenshot 2026-02-25 204931" src="https://github.com/user-attachments/assets/147313fd-1da4-4a6f-b4da-fd54f3a90583" />
 
 
 ### 4. Install Required Components
 From the `osTicket-Installation-Files` folder, perform the following installations:
-1. Install **PHP Manager for IIS** (`PHPManagerForIIS_V1.5.0.msi`).
-2. Install **Rewrite Module** (`rewrite_amd64_en-US.msi`).
+I installed **PHP Manager for IIS** (`PHPManagerForIIS_V1.5.0.msi`) and installed **Rewrite Module** (`rewrite_amd64_en-US.msi`).
+
 <img width="514" height="309" alt="Screenshot 2026-02-25 205346" src="https://github.com/user-attachments/assets/5e9dfe40-aa10-4ef5-921f-ab2851c63777" />
 <img width="347" height="280" alt="Screenshot 2026-02-25 205418" src="https://github.com/user-attachments/assets/b4e8c211-76a6-487d-a38b-2804ca27cbcd" />
 <img width="510" height="414" alt="Screenshot 2026-02-25 205529" src="https://github.com/user-attachments/assets/ef66d70a-dd3c-4d1c-b266-bc0aebd490cc" />
@@ -63,9 +61,8 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
 
 
 ### 5. Set Up PHP
-1. Create the directory `C:\PHP`.
-2. Extract `PHP 7.3.8` (`php-7.3.8-nts-Win32-VC15-x86.zip`) into the `C:\PHP` folder.
-3. Install **VC_redist.x86.exe**.
+I created a dedicated directory at `C:\PHP` to host the PHP runtime environment and extracted `PHP 7.3.8` (`php-7.3.8-nts-Win32-VC15-x86.zip`) into this location to ensure proper server-side scripting support. I then installed the **VC_redist.x86.exe** to satisfy runtime dependencies necessary for PHP to function correctly within the IIS environment.
+ 
 <img width="367" height="377" alt="Screenshot 2026-02-25 210448" src="https://github.com/user-attachments/assets/3c52d019-3e7e-4248-b957-fd2cc3762174" />
 <img width="716" height="609" alt="Screenshot 2026-02-25 211127" src="https://github.com/user-attachments/assets/ca009ad4-d59f-4d3e-9b5b-dd332173a13f" />
 <img width="506" height="369" alt="Screenshot 2026-02-25 211330" src="https://github.com/user-attachments/assets/9f7f258a-abb9-4589-b32b-95f12594803a" />
@@ -73,13 +70,8 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
 
 
 ### 6. Install MySQL
-1. Install **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) with the following configuration:
-   - Choose **Typical Setup**.
-   - Launch the **Configuration Wizard** after installation.
-   - Select **Standard Configuration**.
-   - Set MySQL credentials:
-     - Username: `root`
-     - Password: `root`
+I installed **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) using the Typical Setup option and completed the post-installation Configuration Wizard using the Standard Configuration method. During setup, I configured the database administrative credentials, Username: `root` and Password: `root`  to establish secure access and prepare the relational database environment required for the osTicket application.
+
 <img width="671" height="422" alt="Screenshot 2026-02-25 212430" src="https://github.com/user-attachments/assets/fab912d1-009f-4d62-b3c6-45734bce41df" />
 <img width="492" height="380" alt="Screenshot 2026-02-25 212511" src="https://github.com/user-attachments/assets/30de4881-da78-4a92-88d2-6afe07c74631" />
 <img width="492" height="374" alt="Screenshot 2026-02-25 212654" src="https://github.com/user-attachments/assets/a2e884e1-6ad1-43be-bf1d-31b469cfabb3" />
@@ -87,18 +79,21 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
 
 
 ### 7. Configure IIS
-1. Open IIS as an Administrator.
-2. Register PHP:
-   - Open **PHP Manager** in IIS.
-   - Register `C:\PHP\php-cgi.exe`.
-3. Reload IIS:
-   - Open IIS.
-   - Stop and start the server.
+I launched Internet Information Services (IIS) with administrative privileges and used PHP Manager to register the PHP executable `C:\PHP\php-cgi.exe`, enabling IIS to process PHP-based applications. After completing the configuration, I restarted the IIS service to apply the changes and ensure the web server properly recognized the newly registered PHP runtime.
+
 <img width="437" height="284" alt="Screenshot 2026-02-25 213155" src="https://github.com/user-attachments/assets/b6cdab43-b90b-4db1-a4fe-0a35169571dc" />
 <img width="664" height="446" alt="Screenshot 2026-02-25 213519" src="https://github.com/user-attachments/assets/58ef2f59-43b6-4d57-b0c6-60b5b7a5f820" />
 
 
 ### 8. Install osTicket
+I extracted `osTicket v1.15.8` from the installation package and deployed the application files to the IIS web root directory `C:\inetpub\wwwroot`. The `upload` directory was renamed to `osTicket` to align with the intended site structure. After reloading IIS, I verified the deployment by navigating to the site within IIS Manager and browsing over **Browse *:80**. To resolve initial dependency warnings, I enabled the required PHP extensions `php_imap.dll` `php_intl.dll` `php_opcache.dll` through PHP Manager to ensure full application compatibility and functionality.
+
+
+
+
+
+
+
 1. Extract `osTicket v1.15.8` (`osTicket-v1.15.8.zip`) from the `osTicket-Installation-Files` folder.
 2. Copy the `upload` folder to `C:\inetpub\wwwroot`.
 3. Rename the folder from `upload` to `osTicket`.
