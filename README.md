@@ -93,7 +93,7 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
    - Register `C:\PHP\php-cgi.exe`.
 3. Reload IIS:
    - Open IIS.
-   - Stop and Start the server.
+   - Stop and start the server.
 <img width="437" height="284" alt="Screenshot 2026-02-25 213155" src="https://github.com/user-attachments/assets/b6cdab43-b90b-4db1-a4fe-0a35169571dc" />
 <img width="664" height="446" alt="Screenshot 2026-02-25 213519" src="https://github.com/user-attachments/assets/58ef2f59-43b6-4d57-b0c6-60b5b7a5f820" />
 
@@ -131,11 +131,12 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
    - Name your help desk.
    - Set a default email for receiving customer emails.
   
-<img width="494" alt="Screenshot 2025-01-22 at 8 55 53 PM" src="https://github.com/user-attachments/assets/b2a66cbb-bada-4031-8445-9d2e38c84897" />
-<img width="346" alt="Screenshot 2025-01-22 at 8 56 16 PM" src="https://github.com/user-attachments/assets/2a361498-b828-4fd1-93e3-88f0384427e0" />
-<img width="577" alt="Screenshot 2025-01-22 at 8 57 11 PM" src="https://github.com/user-attachments/assets/5525f530-b204-4472-906d-ff326056ecdc" />
-<img width="415" alt="Screenshot 2025-01-22 at 8 57 44 PM" src="https://github.com/user-attachments/assets/9421699b-142a-49da-9abf-43f523954ac3" />
-<img width="415" alt="Screenshot 2025-01-22 at 8 58 46 PM" src="https://github.com/user-attachments/assets/d5e062b6-e77a-4cba-bb1c-0d8af4b17e23" />
+<img width="565" height="417" alt="Screenshot 2026-02-26 170628" src="https://github.com/user-attachments/assets/dea38f7b-2ea5-49e9-93dc-d599b76210c0" />
+<img width="206" height="152" alt="Screenshot 2026-02-26 170651" src="https://github.com/user-attachments/assets/440860c8-d3bd-45c5-9b01-8ea1511438bd" />
+<img width="481" height="312" alt="Screenshot 2026-02-26 171317" src="https://github.com/user-attachments/assets/cfac16a4-991d-47d3-9889-f9fd3c0c01dd" />
+<img width="819" height="798" alt="Screenshot 2026-02-26 172822" src="https://github.com/user-attachments/assets/f9bad7e5-798a-49c8-9a8e-2a631ca0fe02" />
+
+
 
 ### 10. Set Up the Database
 1. Install **HeidiSQL** from the `osTicket-Installation-Files` folder.
