@@ -86,7 +86,7 @@ I launched Internet Information Services (IIS) with administrative privileges an
 
 
 ### 8. Install osTicket
-I extracted `osTicket v1.15.8` from the installation package and deployed the application files to the IIS web root directory `C:\inetpub\wwwroot`. The `upload` directory was renamed to `osTicket` to align with the intended site structure. After reloading IIS, I verified the deployment by navigating to the site within IIS Manager and browsing over **Browse *:80**. To resolve initial dependency warnings, I enabled the required PHP extensions `php_imap.dll` `php_intl.dll` `php_opcache.dll` through PHP Manager to ensure full application compatibility and functionality.
+I extracted `osTicket v1.15.8` from the `osTicket-Installation-Files` and deployed the application files to the IIS web root directory `C:\inetpub\wwwroot`. The `upload` directory was renamed to `osTicket` to align with the intended site structure. After reloading IIS, I verified the deployment by navigating to **Sites** -> **Default** -> **osTicket** within IIS Manager and browsing over **Browse *:80**. To resolve initial dependency warnings, I enabled the required PHP extensions `php_imap.dll` `php_intl.dll` `php_opcache.dll` through PHP Manager to ensure full application compatibility and functionality.
 
 
 
