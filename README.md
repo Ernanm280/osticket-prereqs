@@ -150,12 +150,12 @@ From the `osTicket-Installation-Files` folder, perform the following installatio
    - MySQL Password: `root`
    - Click **Install Now!**
 
-<img width="413" alt="Screenshot 2025-01-22 at 9 00 07 PM" src="https://github.com/user-attachments/assets/2bcbebe8-8fb2-467e-b880-d055a461df7e" />
-<img width="473" alt="Screenshot 2025-01-22 at 9 05 34 PM" src="https://github.com/user-attachments/assets/c33af950-e50a-4b8b-adb4-4fff4c6f2a90" />
-<img width="625" alt="Screenshot 2025-01-22 at 9 05 49 PM" src="https://github.com/user-attachments/assets/c8fcfd0a-9528-4eba-b768-b4e23027912f" />
-<img width="500" alt="Screenshot 2025-01-22 at 9 06 11 PM" src="https://github.com/user-attachments/assets/728f3790-c646-49d4-93d1-f71b82e372ea" />
-<img width="536" alt="Screenshot 2025-01-22 at 9 06 30 PM" src="https://github.com/user-attachments/assets/89ab1176-e1c9-4724-ae6a-1461dbfdb155" />
-<img width="612" alt="Screenshot 2025-01-22 at 9 06 47 PM" src="https://github.com/user-attachments/assets/386abce2-b4d4-4484-bdfb-8a4f1aff1f85" />
+<img width="788" height="480" alt="Screenshot 2026-02-26 173629" src="https://github.com/user-attachments/assets/a9bebdf3-65ec-49df-9673-51978f3be9a8" />
+<img width="677" height="475" alt="Screenshot 2026-02-26 173837" src="https://github.com/user-attachments/assets/1ec230f6-8975-4099-b9d9-62e73007237d" />
+<img width="610" height="419" alt="Screenshot 2026-02-26 174230" src="https://github.com/user-attachments/assets/435d8ec8-bc60-47ad-85fc-94caa27a93e5" />
+<img width="567" height="372" alt="Screenshot 2026-02-26 174412" src="https://github.com/user-attachments/assets/d8fd3791-ba50-4356-8ac6-61dfbd74bf21" />
+<img width="814" height="611" alt="Screenshot 2026-02-26 174503" src="https://github.com/user-attachments/assets/88df8713-1eeb-41ea-99d3-c052b6238ac6" />
+
 
 ### 11. Post-Installation Cleanup
 1. Delete the `C:\inetpub\wwwroot\osTicket\setup` folder.
