@@ -70,7 +70,7 @@ I created a dedicated directory at `C:\PHP` to host the PHP runtime environment 
 
 
 ### 6. Install MySQL
-I installed **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) using the Typical Setup option and completed the post-installation Configuration Wizard using the Standard Configuration method. During setup, I configured the database administrative credentials, Username: `root` and Password: `root`  to establish secure access and prepare the relational database environment required for the osTicket application.
+I installed **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) using the standard configuration option and completed the post-installation Configuration Wizard using the Standard Configuration method. During setup, I configured the database administrative credentials, Username: `root` and Password: `root`  to establish secure access and prepare the relational database environment required for the osTicket application.
 
 <img width="671" height="422" alt="Screenshot 2026-02-25 212430" src="https://github.com/user-attachments/assets/fab912d1-009f-4d62-b3c6-45734bce41df" />
 <img width="492" height="380" alt="Screenshot 2026-02-25 212511" src="https://github.com/user-attachments/assets/30de4881-da78-4a92-88d2-6afe07c74631" />
