@@ -98,21 +98,6 @@ I extracted `osTicket v1.15.8` from the `osTicket-Installation-Files` and deploy
 
 ### 9. Configure osTicket
 I finalized the application configuration by renaming the sample configuration file from: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` to: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`. I then assign permissions to `ost-config.php` by disabling inherited permissions and manually adding the appropriate access: `Everyone -> Full Control` to allow the application to complete installation. After configuring file permissions, I proceeded with continuing setup in the browser, defining the help desk name, and establishing a default email address for ticket intake and customer communication.
-
-
-
-
-
-
-1. Rename `ost-config.php`:
-   - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
-   - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
-2. Assign permissions to `ost-config.php`:
-   - Disable inheritance -> Remove all permissions.
-   - Add new permissions: `Everyone -> Full Control`.
-3. Continue setup in the browser:
-   - Name your help desk.
-   - Set a default email for receiving customer emails.
   
 <img width="565" height="417" alt="Screenshot 2026-02-26 170628" src="https://github.com/user-attachments/assets/dea38f7b-2ea5-49e9-93dc-d599b76210c0" />
 <img width="206" height="152" alt="Screenshot 2026-02-26 170651" src="https://github.com/user-attachments/assets/440860c8-d3bd-45c5-9b01-8ea1511438bd" />
@@ -122,16 +107,18 @@ I finalized the application configuration by renaming the sample configuration f
 
 
 ### 10. Set Up the Database
-1. Install **HeidiSQL** from the `osTicket-Installation-Files` folder.
-2. Open HeidiSQL and create a new session:
-   - Username: `root`
-   - Password: `root`
-3. Create a database named `osTicket`.
-4. Complete the setup in the browser:
+I installed **HeidiSQL** from the `osTicket-Installation-Files` folder to manage the MySQL database environment and established a new session using the configured administrative credentials  Username: `root`, Password: `root`. Within the MySQL instance, I created a dedicated database named osTicket to support the application backend. I then completed the web-based installation browser by linking the application to the newly created database using the configured MySQL credentials, successfully initializing the osTicket database schema, and finalizing deployment.
    - MySQL Database: `osTicket`
    - MySQL Username: `root`
    - MySQL Password: `root`
    - Click **Install Now!**
+
+
+
+
+
+
+
 
 <img width="788" height="480" alt="Screenshot 2026-02-26 173629" src="https://github.com/user-attachments/assets/a9bebdf3-65ec-49df-9673-51978f3be9a8" />
 <img width="677" height="475" alt="Screenshot 2026-02-26 173837" src="https://github.com/user-attachments/assets/1ec230f6-8975-4099-b9d9-62e73007237d" />
