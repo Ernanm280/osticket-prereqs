@@ -88,25 +88,6 @@ I launched Internet Information Services (IIS) with administrative privileges an
 ### 8. Install osTicket
 I extracted `osTicket v1.15.8` from the `osTicket-Installation-Files` and deployed the application files to the IIS web root directory `C:\inetpub\wwwroot`. The `upload` directory was renamed to `osTicket` to align with the intended site structure. After reloading IIS, I verified the deployment by navigating to **Sites** -> **Default** -> **osTicket** within IIS Manager and browsing over **Browse *:80**. To resolve initial dependency warnings, I enabled the required PHP extensions `php_imap.dll` `php_intl.dll` `php_opcache.dll` through PHP Manager to ensure full application compatibility and functionality.
 
-
-
-
-
-
-
-1. Extract `osTicket v1.15.8` (`osTicket-v1.15.8.zip`) from the `osTicket-Installation-Files` folder.
-2. Copy the `upload` folder to `C:\inetpub\wwwroot`.
-3. Rename the folder from `upload` to `osTicket`.
-4. Reload IIS.
-5. In IIS:
-   - Navigate to **Sites** -> **Default** -> **osTicket**.
-   - On the right-hand side, click **Browse *:80**.
-6. Address missing extensions:
-   - Navigate to **PHP Manager** in IIS.
-   - Enable the following extensions:
-     - `php_imap.dll`
-     - `php_intl.dll`
-     - `php_opcache.dll`
 7. Refresh the osTicket site in your browser.
 <img width="738" height="595" alt="Screenshot 2026-02-25 215053" src="https://github.com/user-attachments/assets/9d7ce37c-d5bd-4a34-803f-e633e9e531b0" />
 <img width="399" height="380" alt="Screenshot 2026-02-25 215219" src="https://github.com/user-attachments/assets/a07e1d6d-20f0-4a38-923e-fe02fa305e63" />
@@ -116,6 +97,13 @@ I extracted `osTicket v1.15.8` from the `osTicket-Installation-Files` and deploy
 <img width="601" height="722" alt="Screenshot 2026-02-25 220348" src="https://github.com/user-attachments/assets/a687e7c8-1a14-4ad5-9565-f472205e851b" />
 
 ### 9. Configure osTicket
+I finalized the application configuration by renaming the sample configuration file from: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php` to: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`. I then assign permissions to `ost-config.php` by disabling inherited permissions and manually adding the appropriate access: `Everyone -> Full Control` to allow the application to complete installation. After configuring file permissions, I proceeded with continuing setup in the browser, defining the help desk name, and establishing a default email address for ticket intake and customer communication.
+
+
+
+
+
+
 1. Rename `ost-config.php`:
    - From: `C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php`
    - To: `C:\inetpub\wwwroot\osTicket\include\ost-config.php`
