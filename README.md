@@ -136,4 +136,4 @@ I installed **HeidiSQL** from the `osTicket-Installation-Files` folder to manage
 - End-User Portal: [http://localhost/osTicket/](http://localhost/osTicket/)
 
 ## Conclusion
-Following these steps, you should have a fully functional osTicket installation. Enjoy managing your help desk with osTicket!
+Upon completion of these steps, the osTicket help desk system was successfully deployed and fully operational within the Azure-hosted Windows environment. This implementation demonstrates the configuration of a web server (IIS), PHP runtime, MySQL database integration, and application-level security adjustments required to support a production-ready ticketing system. Enjoy managing your help desk with osTicket!
