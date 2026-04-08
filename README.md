@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This project demonstrates the deployment of the osTicket help desk system in a cloud-hosted environment using Microsoft Azure. It includes configuring IIS, PHP, MySQL, and integrating all components to support a fully functional ticketing system.<br />
 
 You can find all the necessary installation files for this project below:  
 [Download Files](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
@@ -77,7 +77,6 @@ Created a dedicated directory at `C:\PHP` to host the PHP runtime environment an
 
 <br>
 <br>
-<br>
 
 I then installed the **VC_redist.x86.exe** to satisfy runtime dependencies necessary for PHP to function correctly within the **IIS** environment.
  
@@ -91,7 +90,6 @@ I installed **MySQL 5.5.62** (`mysql-5.5.62-win32.msi`) using the standard confi
 <img width="671" height="422" alt="Screenshot 2026-02-25 212430" src="https://github.com/user-attachments/assets/fab912d1-009f-4d62-b3c6-45734bce41df" />
 <img width="492" height="380" alt="Screenshot 2026-02-25 212511" src="https://github.com/user-attachments/assets/30de4881-da78-4a92-88d2-6afe07c74631" />
 
-<br>
 <br>
 <br>
 
@@ -118,14 +116,12 @@ I extracted `osTicket v1.15.8` from the `osTicket-Installation-Files` and deploy
 
 <br>
 <br>
-<br>
 
 The `upload` directory was renamed to `osTicket` to align with the intended site structure.
  
 <img width="399" height="380" alt="Screenshot 2026-02-25 215219" src="https://github.com/user-attachments/assets/a07e1d6d-20f0-4a38-923e-fe02fa305e63" />
 <img width="185" height="140" alt="Screenshot 2026-02-25 215236" src="https://github.com/user-attachments/assets/f744abc2-5f24-4786-81ea-bcb563802a36" />
 
-<br>
 <br>
 <br>
 
@@ -135,7 +131,6 @@ After reloading **IIS**, I verified the deployment by navigating to **Sites** ->
 <img width="1340" height="401" alt="Screenshot 2026-02-25 215727" src="https://github.com/user-attachments/assets/30602cc8-c66f-4a29-bdfb-1ab5aebbde26" />
 <img width="658" height="769" alt="Screenshot 2026-02-25 220244" src="https://github.com/user-attachments/assets/85ec4e84-b045-43cb-9a4a-325e4b82b7d0" />
 
-<br>
 <br>
 <br>
 
@@ -150,7 +145,6 @@ I finalized the application configuration by renaming the sample configuration f
 <img width="206" height="152" alt="Screenshot 2026-02-26 170651" src="https://github.com/user-attachments/assets/440860c8-d3bd-45c5-9b01-8ea1511438bd" />
 <img width="481" height="312" alt="Screenshot 2026-02-26 171317" src="https://github.com/user-attachments/assets/cfac16a4-991d-47d3-9889-f9fd3c0c01dd" />
 
-<br>
 <br>
 <br>
 
@@ -168,7 +162,6 @@ I installed **HeidiSQL** from the `osTicket-Installation-Files` folder to manage
 <img width="677" height="475" alt="Screenshot 2026-02-26 173837" src="https://github.com/user-attachments/assets/1ec230f6-8975-4099-b9d9-62e73007237d" />
 <img width="610" height="419" alt="Screenshot 2026-02-26 174230" src="https://github.com/user-attachments/assets/435d8ec8-bc60-47ad-85fc-94caa27a93e5" />
 
-<br>
 <br>
 <br>
 
