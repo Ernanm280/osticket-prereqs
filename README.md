@@ -9,9 +9,15 @@ You can find all the necessary installation files for this project below:
 [Download Files](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 <h2>Environments and Technologies Used</h2>
 
+<p align="left">
+<img src="https://skillicons.dev/icons?i=azure,windows,php,mysql" />&nbsp;&nbsp;<img src="images/osticket-icon-dark.png" width="48"></p>
+
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
+- PHP
+- MySQL
+- osTicket
 
 <h2>Operating Systems Used </h2>
 
@@ -24,8 +30,6 @@ You can find all the necessary installation files for this project below:
   - OS: Windows 10
   - vCPUs:4
   - Name: osticket-vm
-  - Username:
-  - Password:
 - Remote Desktop Client
 
 <h2>Installation Steps</h2>
@@ -38,8 +42,11 @@ I logged into the Microsoft Azure portal and deployed a Virtual Machine using th
 - vCPUs:4
 - Credentials: Username/Password
 - Remote Desktop Client
+  
+> [!NOTE]
+> Passwords are shown in this tutorial for learning purposes only. In real-world environments, it is never good practice to store passwords in plain text. Credentials should always be managed securely using a password manager.
 
-After the deployment was completed, I securely connected to the VM using Remote Desktop Protocol (RDP) with the assigned credentials to begin system configuration.
+After the deployment was complete, I securely connected to the VM using Remote Desktop Protocol (RDP) with the assigned credentials to begin system configuration.
 <p>
 <img width="1725" height="383" alt="Screenshot 2026-02-25 201353" src="https://github.com/user-attachments/assets/feca116a-b432-4ebc-a037-d7fa142c5b4d" />
 <img width="1777" height="972" alt="Screenshot 2026-02-25 201828" src="https://github.com/user-attachments/assets/34e023d4-ec87-4009-ac6c-4e9366a21136" />
