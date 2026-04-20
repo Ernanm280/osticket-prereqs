@@ -7,10 +7,12 @@ This project demonstrates the deployment of the osTicket help desk system in a c
 
 You can find all the necessary installation files for this project below:  
 [Download Files](https://drive.google.com/drive/u/1/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
+
 <h2>Environments and Technologies Used</h2>
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=azure,windows,php,mysql" />&nbsp;&nbsp;<img src="images/osticket-icon-dark.png" width="48"></p>
+<img src="https://skillicons.dev/icons?i=azure,windows,php,mysql" />&nbsp;&nbsp;
+
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
